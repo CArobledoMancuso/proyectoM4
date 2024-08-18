@@ -1,0 +1,33 @@
+version: '3'
+services:
+  postgresdb:
+    image: postgres
+    container_name: postgresdb
+    env_file:
+      - .env.development.local
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - nestnetwork
+    ports:
+      - "5432:5432"
+
+  nest-demo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - postgresdb
+    env_file:
+      - .env.development.local
+    networks:
+      - nestnetwork
+    ports:
+      - "3000:3000"
+
+networks:
+  nestnetwork:
+    driver: bridge
+
+volumes:
+  pgdata:

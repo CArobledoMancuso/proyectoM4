@@ -1,0 +1,58 @@
+export const productsMock = [
+  {
+    name: 'iPhone 15',
+    description: 'The best smartphone',
+    price: 500.0,
+    stock: 12,
+    category: 'smartphone',
+  },
+  {
+    name: 'Samsung Galaxy S21',
+    description: 'A high-end Android smartphone',
+    price: 450.0,
+    stock: 8,
+    category: 'smartphone',
+  },
+  {
+    name: 'Logitech MX Master 3',
+    description: 'Advanced wireless mouse',
+    price: 100.0,
+    stock: 15,
+    category: 'mouse',
+  },
+  {
+    name: 'Razer DeathAdder V2',
+    description: 'Ergonomic gaming mouse',
+    price: 70.0,
+    stock: 25,
+    category: 'mouse',
+  },
+  {
+    name: 'Dell UltraSharp 27',
+    description: 'High-resolution monitor with excellent color accuracy',
+    price: 300.0,
+    stock: 10,
+    category: 'monitor',
+  },
+  {
+    name: 'LG 32UL950-W',
+    description: '32-inch 4K monitor with Thunderbolt 3',
+    price: 700.0,
+    stock: 5,
+    category: 'monitor',
+  },
+  {
+    name: 'Corsair K95 RGB Platinum',
+    description: 'Mechanical gaming keyboard with RGB lighting',
+    price: 200.0,
+    stock: 20,
+    category: 'keyboard',
+  },
+  {
+    name: 'Logitech G Pro X',
+    description: 'Professional mechanical gaming keyboard',
+    price: 150.0,
+    stock: 18,
+    category: 'keyboard',
+  },
+];
